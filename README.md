@@ -7,6 +7,8 @@ Este projeto é uma implementação do ng-bootstrap datepicker com algumas adapt
 - A data nos inputs são vistas no padrão brasileiro
 - Os texto do datepicker estão traduzidos para pt-BR
 
+## Demo
+[https://belchior.github.io/ng-bootstrap-datepicker/](https://belchior.github.io/ng-bootstrap-datepicker/)
 
 ## Development server
 
