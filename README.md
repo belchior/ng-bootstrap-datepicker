@@ -1,11 +1,12 @@
 # ng-bootstrap datepicker pt-BR
 
-Este projeto é uma implementação do ng-bootstrap datepicker com algumas adaptações para o português do Brasil.
+This project is an implementation of ng-bootstrap datepicker with some adjustments to Brazilian portuguese.
+If you need in another language fork this project and edit the datepicker-i18n.ts file.
 
 ## Features
-- Mobile Friendly: Uma forma simples de lidar com a incompatibilidade do input date
-- A data nos inputs são vistas no padrão brasileiro
-- Os texto do datepicker estão traduzidos para pt-BR
+- Mobile Friendly: A simple way to dealing with cross-browser incompatibility of input date.
+- The date is formated for Brazilian standard
+- The texts was translated to portuguese
 
 ## Demo
 [https://belchior.github.io/ng-bootstrap-datepicker/](https://belchior.github.io/ng-bootstrap-datepicker/)
