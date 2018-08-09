@@ -1,0 +1,25 @@
+<div class="input-group">
+  <input name="dateMobile"
+    [(ngModel)]="dateMobile"
+    (change)="updateDate($event.target.value)"
+    type="date"
+    class="form-control d-inline d-md-none"
+    placeholder="dd/mm/yyyy"
+  >
+  <input name="dateDesktop"
+    [(ngModel)]="dateDesktop"
+    (ngModelChange)="updateDate($event)"
+    ngbDatepicker
+    #d="ngbDatepicker"
+    navigation="arrows"
+    outsideDays="collapsed"
+    type="text"
+    class="form-control d-none d-md-inline"
+    placeholder="dd/mm/yyyy"
+  >
+  <div class="input-group-append d-none d-md-inline">
+    <button (click)="d.toggle()" class="btn btn-outline-secondary" type="button">
+      <img [src]="imgSrc" class="calendar-icon" alt="calendar icon"/>
+    </button>
+  </div>
+</div>
