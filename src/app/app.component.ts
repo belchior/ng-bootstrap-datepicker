@@ -8,5 +8,5 @@ import { NgbDateStruct, NgbDateParserFormatter } from "@ng-bootstrap/ng-bootstra
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public model: string = new Date().toJSON();
+  public date: string = new Date().toJSON();
 }

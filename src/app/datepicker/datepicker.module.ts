@@ -25,7 +25,6 @@ import { InputDateComponent } from './input-date/input-date.component';
     I18n,
     {provide: NgbDatepickerI18n, useClass: CustomDatepickerI18n},
     {provide: NgbDateParserFormatter, useClass: NgbDatePTBRParserFormatter},
-    {provide: APP_BASE_HREF, useValue : '/' },
   ]
 })
 export class DatepickerModule { }

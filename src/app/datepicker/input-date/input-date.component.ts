@@ -7,8 +7,6 @@ import { NgbDateStruct } from "@ng-bootstrap/ng-bootstrap";
   styleUrls: ['./input-date.component.css']
 })
 export class InputDateComponent implements OnChanges {
-  constructor() { }
-
   @Input() date: string;
   @Output() dateChange = new EventEmitter<string>();
 
@@ -29,7 +27,7 @@ export class InputDateComponent implements OnChanges {
   }
 
   convertStringToModel(text: string): NgbDateStruct {
-    if (text === null) {
+    if (text == null) {
       const today = new Date();
       return {
         year: today.getFullYear(),
@@ -53,7 +51,7 @@ export class InputDateComponent implements OnChanges {
     return date ? date.replace(/T.*/, '') : date;
   }
 
-  updateDate(date: any) {
+  updateDate(date: string | NgbDateStruct) {
     if (typeof date === 'string') {
       this.date = this.addHoursFromDate(date);
       this.dateDesktop = this.convertStringToModel(date);
